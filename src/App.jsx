@@ -1,6 +1,10 @@
+import ImageGallery from "./components/ImageGallery"
+
 const HomePage = () => {
   return (
-    <div className="text-rose-500 text-center">HomePage</div>
+    <section className="w-full min-h-screen flex justify-center items-center sm:mb-10 mb-0 bg-slate-200">
+      <ImageGallery/>
+    </section>
   )
 }
 
