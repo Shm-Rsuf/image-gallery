@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Images } from "../data/ImageData";
 import AddImage from "./AddImage";
+import AfterSelectHeader from "./AfterSelectHeader";
 
 const ImageGallery = () => {
   // after select an imgage, it stores there
