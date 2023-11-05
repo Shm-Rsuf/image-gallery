@@ -96,7 +96,7 @@ const ImageGallery = () => {
                 alt={`Image ${image._id}`}
               />
 
-              <div className="absolute w-full  h-full bg-black top-0 left-0 opacity-0  hover:opacity-50 duration-300 cursor-move">
+              <div className="absolute w-full h-full bg-black top-0 left-0 opacity-0  hover:opacity-50 duration-300 cursor-move">
                 <input
                   checked={false}
                   readOnly
