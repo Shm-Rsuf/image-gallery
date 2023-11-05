@@ -15,7 +15,8 @@ This repository aims to showcase a well-designed and responsive image gallery ap
    - Provided a clear visual indication of the selected images, ensuring a straightforward and user-friendly process for deletion.
 4. **Setting Feature Image:**
    - Allowed users to set a feature image by sorting. The first image from the left-to-right direction is treated as the featured image.
-  - The feature image has been made visually distinct from the other images, enhancing its prominence in the gallery.
+
+   - The feature image has been made visually distinct from the other images, enhancing its prominence in the gallery.
 5. **User Experience:**
    - Ensured a smooth and responsive user experience by implementing transitions and animations, creating a polished look and feel for the gallery. 
    - This enhances the overall user interaction with the application.
