@@ -14,7 +14,7 @@ const AfterSelectHeader = ({
           onClick={handleUnselect}
         />
         <p className="pl-2 text-xl font-bold">
-          {selectedImages.length} FIles Selected
+          {selectedImages.length} FIle{selectedImages.length>1? "s":""} Selected
         </p>
       </div>
       <div className="pr-23">
