@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const AfterSelectHeader = ({
   handleUnselect,
   selectedImages,
@@ -14,7 +15,8 @@ const AfterSelectHeader = ({
           onClick={handleUnselect}
         />
         <p className="pl-2 text-xl font-bold">
-          { selectedImages.length} File{selectedImages.length > 1 ? "s" : "" } Selected
+          {selectedImages.length} File{selectedImages.length > 1 ? "s" : ""}{" "}
+          Selected
         </p>
       </div>
       <div className="pr-23">

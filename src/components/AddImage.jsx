@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import { useState } from "react";
 
 const AddImage = ({ setImages, images }) => {
@@ -6,7 +8,7 @@ const AddImage = ({ setImages, images }) => {
   const handleImageSelect = (e) => {
     //    find max number from the array object
     const maxIdObject = images.reduce((max, obj) =>
-      parseInt(obj._id) > parseInt(max._id) ? obj : max,
+      parseInt(obj._id) > parseInt(max._id) ? obj : max
     );
     const selectedFile = e.target.files[0];
     if (selectedFile) {
