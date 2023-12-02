@@ -8,7 +8,7 @@ const ImageGallery = () => {
   // after select an imgage, it stores there
   const [selectedImages, setSelectedImages] = useState([]);
   // Use the provided image data
-  const [images, setImages] = useState(Images);
+  const [images, setImages] = useState(Images); // all images is here
   const [draggedImage, setDraggedImage] = useState(null);
   const [dragedID, setDragedID] = useState(null);
 
@@ -20,6 +20,7 @@ const ImageGallery = () => {
       setSelectedImages([...selectedImages, imageId]);
     }
   };
+
   const handleUnselect = () => {
     setSelectedImages([]);
   };
@@ -39,10 +40,11 @@ const ImageGallery = () => {
     const sourceImageId = e.dataTransfer.getData("imageId");
     const updatedImages = images.slice();
     const sourceIndex = images.findIndex(
-      (image) => image._id === sourceImageId,
+      (image) => image._id === sourceImageId
     );
+
     const targetIndex = images.findIndex(
-      (image) => image._id === targetImage._id,
+      (image) => image._id === targetImage._id
     );
 
     updatedImages.splice(sourceIndex, 1);
@@ -56,7 +58,7 @@ const ImageGallery = () => {
   const handleDelete = (e) => {
     e.preventDefault();
     const deleteItemFilter = images.filter(
-      (image) => !selectedImages.includes(image._id),
+      (image) => !selectedImages.includes(image._id)
     );
     setImages(deleteItemFilter);
     setSelectedImages([]);
@@ -78,7 +80,7 @@ const ImageGallery = () => {
       <hr className="border-b-2 border-slate-700 mb-3" />
 
       {/* gallery body  */}
-      <div onDragOver={handleDragOver} className="gallery-body ">
+      <div onDragOver={handleDragOver} className="gallery-body">
         {images?.map((image) => (
           <div
             className="gallery-item relative"

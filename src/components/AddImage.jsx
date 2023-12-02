@@ -6,11 +6,12 @@ const AddImage = ({ setImages, images }) => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const handleImageSelect = (e) => {
-    //    find max number from the array object
+    //find max number from the array object
     const maxIdObject = images.reduce((max, obj) =>
       parseInt(obj._id) > parseInt(max._id) ? obj : max
     );
     const selectedFile = e.target.files[0];
+    console.dir(e.target);
     if (selectedFile) {
       setSelectedImage(URL.createObjectURL(selectedFile));
       const addNewImage = {
